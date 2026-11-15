@@ -23,6 +23,8 @@ An English/Hindi community experience with local context, guided reporting and p
 
 [View reviewed app screenshots, project story and dated verification results →](https://github.com/Rohan-minetheift/HIMGAURAV-Showcase)
 
+**Download:** [Android APK · v9.12.1](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/himgaurav-v9.12.1)
+
 ---
 
 ## Align
