@@ -1,12 +1,19 @@
-# Selected projects · Rohan Gautam
+# Projects
 
-**A curated view of community technology, web interfaces and applied vision experiments.**
+A short tour of the apps and builds I work on.  
+APK downloads are on the **[Releases](https://github.com/Rohan-minetheift/Projects-Showcase/releases)** page.
 
-This repository presents project ideas and scope without distributing implementation code, private configuration or user data. It deliberately favors a few understandable stories over a catalogue of unfinished folders.
+| Project | Category | Platform | Download |
+|---|---|---|---|
+| [HIMGAURAV](#himgaurav) | Disaster information | Android · Web | [v9.12.1](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/himgaurav-v9.12.1) |
+| [Align](#align) | Productivity | Android | [v1.0.0](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/align-v1.0.0) |
+| [Agricore](#agricore) | IoT · Agriculture | Android + ESP32 | [v1.0.0](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/agricore-v1.0.0) |
+| [Praxis](#praxis) | Digital wellbeing | Android | Coming soon |
+| [Fluid Routine Planner](#fluid-routine-planner) | Productivity · Privacy | Android | [v1.0](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/fluid-routine-planner-v1.0) |
 
-[Profile](https://github.com/Rohan-minetheift) · [Featured project: HIMGAURAV](https://github.com/Rohan-minetheift/HIMGAURAV-Showcase)
+---
 
-## 01 · HIMGAURAV
+## HIMGAURAV
 
 **Community reporting and Himalayan landslide research**
 
@@ -17,48 +24,70 @@ An English/Hindi community experience with local context, guided reporting and p
 
 [View reviewed app screenshots, project story and dated verification results →](https://github.com/Rohan-minetheift/HIMGAURAV-Showcase)
 
-## 02 · T&P Club Hub
+---
 
-**Student and faculty coordination**
+## Align
 
-The repository documentation describes a Training & Placement Club system for the ECE Department at JNGEC: dashboards, activities, resources, announcements and placement-related workflows.
+**A consistency engine for everyday habits**
 
-**Design emphasis:** bringing related club tasks into a common interface.  
-**Boundary:** this description reflects project documentation, not a fresh functional audit or an institutional endorsement. No student records or administrative screens are published here.
+Align keeps daily routines in one place. It tracks streaks and runs focus/Pomodoro sessions. It also has a water goal, eye-care reminders and a brain dump with history. Data is stored on the device and can be exported to CSV or sent to Google Sheets.
 
-## 03 · signCONV
+`Flutter` `Riverpod` `Hive` · Android 7.0+
 
-**Hand gestures, text and speech**
+---
 
-A camera-based prototype combining hand tracking, gesture classification and text-to-speech interaction.
+## Agricore
 
-**Design emphasis:** exploring alternate ways to interact with software.  
-**Boundary:** gesture classification is not equivalent to complete sign-language understanding. No independently verified recognition accuracy or accessibility outcome is claimed. No training data or model files are distributed here.
+**Farm automation you set up on screen**
 
-## 04 · FaceREC
+Agricore turns a phone into the control panel for an ESP32 sensor network. You drag sensors onto pins of a virtual board, and the app checks the wiring for duplicate or invalid GPIO pins and generates the configuration. It then connects to a master gateway over WebSocket to stream live readings from field nodes.
 
-**Camera-based recognition experiments**
+- Live node health: battery drain, board temperature and weak-signal alerts that suggest where to add a repeater node
+- Master and node firmware setup guide, with node pairing by MAC address
+- Simulation mode for trying it out without hardware
 
-A face-recognition prototype with interfaces for image input and camera-based recognition experiments.
+`Flutter` `ESP32` `WebSocket` · Android 7.0+
 
-**Design emphasis:** understanding the interaction between visual input and a usable interface.  
-**Boundary:** not presented as a certified security product or dependable identity-verification system. Any demonstration should use consenting participants; no face images, biometric representations or identity datasets are published here.
+---
 
-## 05 · LOGIN-portal
+## Praxis
 
-**Account-interface design**
+**A launcher that puts a pause between you and the scroll**
 
-A frontend exploration of sign-in, sign-out and account-recovery screens.
+Praxis replaces the home screen with a calmer, minimal launcher. Its friction engine steps in when a distracting app is opened and adds a short delay and a breathing screen first, so opening it becomes a deliberate choice. It also includes a task scheduler and a screen-time analytics view.
 
-**Design emphasis:** clear form structure and navigation.  
-**Boundary:** interface design alone does not establish secure authentication or a production backend.
+`Kotlin` `Jetpack Compose` `Accessibility Service` · Android 8.0+  
+**Download:** coming soon
 
-## How to read this portfolio
+---
 
-Project scope and measured outcomes are different. Only HIMGAURAV currently links to dated verification notes in this showcase. Other entries are high-level descriptions based on repository documentation and metadata; they have not been re-tested in this portfolio pass.
+## Fluid Routine Planner
 
-Other experiments are omitted until their purpose, ownership, attribution and publication safety can be reviewed. Existing third-party rights and license obligations are not changed by keeping source private. No open-source license or new access to implementation is granted by this showcase.
+**Plan the day and keep private notes locked**
 
-## Publication boundaries
+A routine planner with an encrypted vault for private entries. The vault is protected by fingerprint or device credential and stored with SQLCipher encryption. A floating overlay keeps the current routine visible over other apps.
 
-No secrets, private endpoints, account records, operational data, model artifacts or application bundles belong in this repository. See [public-materials policy](SECURITY.md). Public availability does not imply an emergency support channel.
+`Kotlin` `Jetpack Compose` `SQLCipher` `Biometric` · Android 8.0+
+
+---
+
+## Also building
+
+| Area | Project |
+|---|---|
+| Radar | Equivalent-time UWB timed-array radar simulator with polarity-coded sampling |
+| Edge AI | Structured pruning of radar neural networks for mmWave sensors |
+| Networking | Delay-tolerant mesh network for areas with no connectivity, built on ESP32 |
+| RF | Microwave sensors and power-amplifier design studies |
+
+---
+
+### Installing an APK
+
+1. Download the `.apk` from the release page.
+2. On Android, allow **Install unknown apps** for your browser or file manager.
+3. Open the file and install it. Play Protect may warn you because these builds are not from the Play Store.
+
+Each release lists a SHA-256 checksum so you can confirm the file is unchanged.
+
+<sub>Source code and configuration are private. See the [public-materials policy](SECURITY.md).</sub>
