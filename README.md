@@ -1,15 +1,14 @@
 # Projects
 
-A short tour of the apps and builds I work on.  
-APK downloads are on the **[Releases](https://github.com/Rohan-minetheift/Projects-Showcase/releases)** page.
+A short tour of the apps and builds I work on.
 
-| Project | Category | Platform | Download |
-|---|---|---|---|
-| [HIMGAURAV](#himgaurav) | Disaster information | Android · Web | [v9.12.1](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/himgaurav-v9.12.1) |
-| [Align](#align) | Productivity | Android | [v1.0.0](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/align-v1.0.0) |
-| [Agricore](#agricore) | IoT · Agriculture | Android + ESP32 | [v1.0.0](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/agricore-v1.0.0) |
-| [Praxis](#praxis) | Digital wellbeing | Android | Coming soon |
-| [Fluid Routine Planner](#fluid-routine-planner) | Productivity · Privacy | Android | [v1.0](https://github.com/Rohan-minetheift/Projects-Showcase/releases/tag/fluid-routine-planner-v1.0) |
+| Project | Category | Platform |
+|---|---|---|
+| [HIMGAURAV](#himgaurav) | Disaster information | Android · Web |
+| [Align](#align) | Productivity | Android |
+| [Agricore](#agricore) | IoT · Agriculture | Android + ESP32 |
+| [Praxis](#praxis) | Digital wellbeing | Android |
+| [Fluid Routine Planner](#fluid-routine-planner) | Productivity · Privacy | Android |
 
 ---
 
@@ -56,8 +55,7 @@ Agricore turns a phone into the control panel for an ESP32 sensor network. You d
 
 Praxis replaces the home screen with a calmer, minimal launcher. Its friction engine steps in when a distracting app is opened and adds a short delay and a breathing screen first, so opening it becomes a deliberate choice. It also includes a task scheduler and a screen-time analytics view.
 
-`Kotlin` `Jetpack Compose` `Accessibility Service` · Android 8.0+  
-**Download:** coming soon
+`Kotlin` `Jetpack Compose` `Accessibility Service` · Android 8.0+
 
 ---
 
@@ -81,13 +79,5 @@ A routine planner with an encrypted vault for private entries. The vault is prot
 | RF | Microwave sensors and power-amplifier design studies |
 
 ---
-
-### Installing an APK
-
-1. Download the `.apk` from the release page.
-2. On Android, allow **Install unknown apps** for your browser or file manager.
-3. Open the file and install it. Play Protect may warn you because these builds are not from the Play Store.
-
-Each release lists a SHA-256 checksum so you can confirm the file is unchanged.
 
 <sub>Source code and configuration are private. See the [public-materials policy](SECURITY.md).</sub>
